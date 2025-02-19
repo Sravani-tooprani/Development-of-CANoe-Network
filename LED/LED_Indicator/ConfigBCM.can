@@ -1,0 +1,17 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message BCMMessage b;
+ 
+}
+
+on envVar Env_BCM
+{
+  b.BCM_Signal=getValue(Env_BCM);
+  output(b);
+}
